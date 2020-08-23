@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
+                            "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="xml">
+        <folder name="entities">
+            <folder name="teste_modulo">
+                <file name="tela" url="nbres:/org/netbeans/modules/settings/resources/properties-1_0.dtd">
+                    <!--moduloAtualizaProjeto.telaTopComponent-->
+                    <attr name="hint.originalPublicID" stringvalue="-//teste_modulo//tela//EN"/>
+                </file>
+            </folder>
+        </folder>
+        <folder name="memory">
+            <folder name="moduloAtualizaProjeto">
+                <file name="telaTopComponent">
+                    <!--moduloAtualizaProjeto.telaTopComponent-->
+                    <attr name="settings.providerPath" stringvalue="xml/lookups//teste_modulo/tela.instance"/>
+                </file>
+            </folder>
+        </folder>
+        <folder name="lookups">
+            <folder name="teste_modulo">
+                <file name="tela.instance">
+                    <!--moduloAtualizaProjeto.telaTopComponent-->
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.create" name="instanceCreate"/>
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.properties" name="settings.convertor"/>
+                    <attr name="settings.instanceClass" stringvalue="moduloAtualizaProjeto.telaTopComponent"/>
+                    <attr name="settings.instanceOf" stringvalue="moduloAtualizaProjeto.telaTopComponent"/>
+                    <attr boolvalue="true" name="xmlproperties.preventStoring"/>
+                </file>
+            </folder>
+        </folder>
+    </folder>
+    <folder name="Menu">
+        <folder name="Window">
+            <file name="teste_modulo-telaTopComponent.shadow">
+                <!--moduloAtualizaProjeto.telaTopComponent-->
+                <attr name="originalFile" stringvalue="Actions/Window/teste_modulo-telaTopComponent.instance"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Windows2">
+        <folder name="Components">
+            <file name="telaTopComponent.settings">
+                <!--moduloAtualizaProjeto.telaTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE settings PUBLIC "-//NetBeans//DTD Session settings 1.0//EN" "http://www.netbeans.org/dtds/sessionsettings-1_0.dtd">
+<settings version="1.0">
+  <instance class="moduloAtualizaProjeto.telaTopComponent"/>
+</settings>
+]]></file>
+        </folder>
+        <folder name="Modes">
+            <folder name="output">
+                <file name="telaTopComponent.wstcref">
+                    <!--moduloAtualizaProjeto.telaTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tc-ref PUBLIC "-//NetBeans//DTD Top Component in Mode Properties 2.0//EN" "http://www.netbeans.org/dtds/tc-ref2_0.dtd">
+<tc-ref version="2.0">
+  <tc-id id="telaTopComponent"/>
+  <state opened="true"/>
+</tc-ref>
+]]></file>
+            </folder>
+        </folder>
+    </folder>
+    <folder name="Actions">
+        <folder name="Window">
+            <file name="teste_modulo-telaTopComponent.instance">
+                <!--moduloAtualizaProjeto.telaTopComponent-->
+                <attr
+                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
+                <attr name="component" newvalue="moduloAtualizaProjeto.telaTopComponent"/>
+                <attr name="preferredID" stringvalue="telaTopComponent"/>
+                <attr
+                    bundlevalue="moduloAtualizaProjeto.Bundle#CTL_telaAction" name="displayName"/>
+            </file>
+        </folder>
+    </folder>
+</filesystem>

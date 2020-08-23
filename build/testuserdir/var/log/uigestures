@@ -1,0 +1,155 @@
+<record>
+  <date>2020-08-23T18:52:36</date>
+  <millis>1598219556939</millis>
+  <sequence>48</sequence>
+  <level>300</level>
+  <thread>14</thread>
+  <message>CPU INFO</message>
+  <param>4</param>
+</record>
+<record>
+  <date>2020-08-23T18:52:36</date>
+  <millis>1598219556953</millis>
+  <sequence>49</sequence>
+  <level>300</level>
+  <thread>14</thread>
+  <message>SCREEN SIZE</message>
+  <param>3840</param>
+  <param>1080</param>
+  <param>2</param>
+</record>
+<record>
+  <date>2020-08-23T18:52:36</date>
+  <millis>1598219556955</millis>
+  <sequence>50</sequence>
+  <level>700</level>
+  <thread>14</thread>
+  <message>IDE_STARTUP</message>
+</record>
+<record>
+  <date>2020-08-23T18:52:38</date>
+  <millis>1598219558620</millis>
+  <sequence>74</sequence>
+  <logger>org.netbeans.ui.metrics.laf</logger>
+  <level>800</level>
+  <thread>14</thread>
+  <message>USG_LOOK_AND_FEEL</message>
+  <param>GTK</param>
+  <param>GTK look and feel</param>
+</record>
+<record>
+  <date>2020-08-23T18:52:41</date>
+  <millis>1598219561788</millis>
+  <sequence>78</sequence>
+  <level>800</level>
+  <thread>13</thread>
+  <message>MEMORY</message>
+  <key>MEMORY</key>
+  <catalog>&lt;null&gt;</catalog>
+  <param>16698839040</param>
+</record>
+<record>
+  <date>2020-08-23T18:52:47</date>
+  <millis>1598219567082</millis>
+  <sequence>83</sequence>
+  <logger>org.openide.util.RequestProcessor</logger>
+  <level>1000</level>
+  <thread>28</thread>
+  <message>Error in RequestProcessor org.netbeans.modules.autoupdate.ui.actions.AutoupdateCheckScheduler$7</message>
+  <exception>
+    <message>org.openide.util.RequestProcessor$SlowItem: task failed due to: java.lang.AssertionError: 5 tokens for org.netbeans.modules.javascript2.react|JavaScript2 JSX | React|0.1.1|0.1.1| </message>
+    <frame>
+      <class>org.openide.util.RequestProcessor</class>
+      <method>post</method>
+      <line>431</line>
+      <file>${netbeans.home}lib/org-openide-util.jar</file>
+    </frame>
+    <frame>
+      <class>org.netbeans.modules.autoupdate.ui.actions.AutoupdateCheckScheduler$5</class>
+      <method>run</method>
+      <line>197</line>
+      <file>${netbeans.home}modules/org-netbeans-modules-autoupdate-ui.jar</file>
+    </frame>
+    <frame>
+      <class>org.openide.util.RequestProcessor$Task</class>
+      <method>run</method>
+      <line>1443</line>
+      <file>${netbeans.home}lib/org-openide-util.jar</file>
+    </frame>
+    <frame>
+      <class>org.netbeans.modules.openide.util.GlobalLookup</class>
+      <method>execute</method>
+      <line>68</line>
+      <file>${netbeans.home}lib/org-openide-util-lookup.jar</file>
+    </frame>
+    <frame>
+      <class>org.openide.util.lookup.Lookups</class>
+      <method>executeWith</method>
+      <line>303</line>
+      <file>${netbeans.home}lib/org-openide-util-lookup.jar</file>
+    </frame>
+    <frame>
+      <class>org.openide.util.RequestProcessor$Processor</class>
+      <method>run</method>
+      <line>2058</line>
+      <file>${netbeans.home}lib/org-openide-util.jar</file>
+    </frame>
+  </exception>
+  <exception>
+   <message>java.lang.AssertionError: 5 tokens for org.netbeans.modules.javascript2.react|JavaScript2 JSX | React|0.1.1|0.1.1| </message>
+    <frame>
+      <class>org.netbeans.modules.autoupdate.ui.wizards.LazyInstallUnitWizardIterator$LazyUnit</class>
+      <method>parseLazyUnit</method>
+      <line>226</line>
+      <file>${netbeans.home}modules/org-netbeans-modules-autoupdate-ui.jar</file>
+    </frame>
+    <frame>
+      <class>org.netbeans.modules.autoupdate.ui.wizards.LazyInstallUnitWizardIterator$LazyUnit</class>
+      <method>loadLazyUnits</method>
+      <line>178</line>
+      <file>${netbeans.home}modules/org-netbeans-modules-autoupdate-ui.jar</file>
+    </frame>
+    <frame>
+      <class>org.netbeans.modules.autoupdate.ui.actions.AutoupdateCheckScheduler$7</class>
+      <method>run</method>
+      <line>480</line>
+      <file>${netbeans.home}modules/org-netbeans-modules-autoupdate-ui.jar</file>
+    </frame>
+   <more>4</more>
+  </exception>
+</record>
+<record>
+  <date>2020-08-23T18:52:58</date>
+  <millis>1598219578785</millis>
+  <sequence>86</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>27</thread>
+  <message>INDEXING_STARTED</message>
+  <key>INDEXING_STARTED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>0</param>
+</record>
+<record>
+  <date>2020-08-23T18:52:58</date>
+  <millis>1598219578813</millis>
+  <sequence>87</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>27</thread>
+  <message>INDEXING_FINISHED</message>
+  <key>INDEXING_FINISHED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>23</param>
+</record>
+<record>
+  <date>2020-08-23T18:52:58</date>
+  <millis>1598219578879</millis>
+  <sequence>92</sequence>
+  <logger>org.netbeans.ui.focus</logger>
+  <level>500</level>
+  <thread>19</thread>
+  <message>LOG_WINDOW_DEACTIVATED</message>
+  <key>LOG_WINDOW_DEACTIVATED</key>
+  <catalog>org.netbeans.core.ui.warmup.Bundle</catalog>
+</record>
