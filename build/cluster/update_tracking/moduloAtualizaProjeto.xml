@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><module codename="moduloAtualizaProjeto">
-    <module_version install_time="1598219550692" last="true" origin="installer" specification_version="1.0">
+    <module_version install_time="1598745607583" last="true" origin="installer" specification_version="1.0">
         <file crc="4031251523" name="config/Modules/moduloAtualizaProjeto.xml"/>
-        <file crc="29491392" name="modules/moduloAtualizaProjeto.jar"/>
+        <file crc="4259885383" name="modules/moduloAtualizaProjeto.jar"/>
     </module_version>
 </module>

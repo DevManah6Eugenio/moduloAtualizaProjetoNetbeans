@@ -11,6 +11,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import javax.swing.JOptionPane;
 import org.netbeans.api.settings.ConvertAsProperties;
 import org.openide.awt.ActionID;
@@ -68,13 +70,16 @@ public final class telaTopComponent extends TopComponent {
         jButtonAlterVersao = new javax.swing.JButton();
         jComboBoxAlterVersao = new javax.swing.JComboBox<>();
         jLabel5 = new javax.swing.JLabel();
-        jPanelTag = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextPaneLogVersao = new javax.swing.JTextPane();
+        jPanel1 = new javax.swing.JPanel();
+        jPanelTag1 = new javax.swing.JPanel();
         jTextFieldTag = new javax.swing.JTextField();
         jButtonAlterTag = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         jComboBoxAlterTag = new javax.swing.JComboBox<>();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPaneLog = new javax.swing.JTextPane();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextPaneLogTag = new javax.swing.JTextPane();
         jPanel3 = new javax.swing.JPanel();
         jPanelCaminhoRepoLocal = new javax.swing.JPanel();
         jTextFieldCaminhoRepoLocaGweb = new javax.swing.JTextField();
@@ -117,8 +122,8 @@ public final class telaTopComponent extends TopComponent {
                 .addGap(18, 18, 18)
                 .addComponent(jComboBoxVersao, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButtonAlterVersao, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jButtonAlterVersao, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
+                .addContainerGap())
         );
         painelAlterVersaoLayout.setVerticalGroup(
             painelAlterVersaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -129,7 +134,33 @@ public final class telaTopComponent extends TopComponent {
                 .addComponent(jLabel5))
         );
 
-        jPanelTag.setBorder(javax.swing.BorderFactory.createTitledBorder(org.openide.util.NbBundle.getMessage(telaTopComponent.class, "telaTopComponent.jPanelTag.border.title"))); // NOI18N
+        jScrollPane1.setViewportView(jTextPaneLogVersao);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1)
+                    .addComponent(painelAlterVersao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(painelAlterVersao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 179, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jTabbedPane2.addTab(org.openide.util.NbBundle.getMessage(telaTopComponent.class, "telaTopComponent.jPanel2.TabConstraints.tabTitle"), jPanel2); // NOI18N
+
+        jPanelTag1.setBorder(javax.swing.BorderFactory.createTitledBorder(org.openide.util.NbBundle.getMessage(telaTopComponent.class, "telaTopComponent.jPanelTag1.border.title"))); // NOI18N
+        jPanelTag1.setMaximumSize(new java.awt.Dimension(492, 53));
 
         jTextFieldTag.setText(org.openide.util.NbBundle.getMessage(telaTopComponent.class, "telaTopComponent.jTextFieldTag.text")); // NOI18N
 
@@ -140,62 +171,57 @@ public final class telaTopComponent extends TopComponent {
             }
         });
 
-        org.openide.awt.Mnemonics.setLocalizedText(jLabel4, org.openide.util.NbBundle.getMessage(telaTopComponent.class, "telaTopComponent.jLabel4.text")); // NOI18N
+        org.openide.awt.Mnemonics.setLocalizedText(jLabel9, org.openide.util.NbBundle.getMessage(telaTopComponent.class, "telaTopComponent.jLabel9.text")); // NOI18N
 
         jComboBoxAlterTag.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Webtrans", "Gweb" }));
 
-        javax.swing.GroupLayout jPanelTagLayout = new javax.swing.GroupLayout(jPanelTag);
-        jPanelTag.setLayout(jPanelTagLayout);
-        jPanelTagLayout.setHorizontalGroup(
-            jPanelTagLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelTagLayout.createSequentialGroup()
+        javax.swing.GroupLayout jPanelTag1Layout = new javax.swing.GroupLayout(jPanelTag1);
+        jPanelTag1.setLayout(jPanelTag1Layout);
+        jPanelTag1Layout.setHorizontalGroup(
+            jPanelTag1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelTag1Layout.createSequentialGroup()
                 .addComponent(jComboBoxAlterTag, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel4)
+                .addComponent(jLabel9)
                 .addGap(18, 18, 18)
                 .addComponent(jTextFieldTag, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButtonAlterTag, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(35, Short.MAX_VALUE))
-        );
-        jPanelTagLayout.setVerticalGroup(
-            jPanelTagLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelTagLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanelTagLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextFieldTag, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonAlterTag)
-                    .addComponent(jLabel4)
-                    .addComponent(jComboBoxAlterTag, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-        );
-
-        jScrollPane1.setViewportView(jTextPaneLog);
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1)
-                    .addComponent(painelAlterVersao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanelTag, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jButtonAlterTag, javax.swing.GroupLayout.DEFAULT_SIZE, 153, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        jPanelTag1Layout.setVerticalGroup(
+            jPanelTag1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelTag1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(jTextFieldTag, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButtonAlterTag)
+                .addComponent(jLabel9)
+                .addComponent(jComboBoxAlterTag, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        jScrollPane2.setViewportView(jTextPaneLogTag);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(painelAlterVersao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanelTag1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanelTag1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanelTag, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 106, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 179, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        jTabbedPane2.addTab(org.openide.util.NbBundle.getMessage(telaTopComponent.class, "telaTopComponent.jPanel2.TabConstraints.tabTitle"), jPanel2); // NOI18N
+        jTabbedPane2.addTab(org.openide.util.NbBundle.getMessage(telaTopComponent.class, "telaTopComponent.jPanel1.TabConstraints.tabTitle"), jPanel1); // NOI18N
 
         jPanelCaminhoRepoLocal.setBorder(javax.swing.BorderFactory.createTitledBorder(org.openide.util.NbBundle.getMessage(telaTopComponent.class, "telaTopComponent.jPanelCaminhoRepoLocal.border.title"))); // NOI18N
 
@@ -331,22 +357,20 @@ public final class telaTopComponent extends TopComponent {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jTabbedPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 8, Short.MAX_VALUE))
+            .addComponent(jTabbedPane2)
         );
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jTextFieldCaminhoRepoLocaWebtransActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldCaminhoRepoLocaWebtransActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextFieldCaminhoRepoLocaWebtransActionPerformed
 
     private void jTextFieldCaminhoRepoRemotoWebtransActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldCaminhoRepoRemotoWebtransActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldCaminhoRepoRemotoWebtransActionPerformed
 
-    private void jButtonAlterTagActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAlterTagActionPerformed
+    private void jTextFieldCaminhoRepoLocaWebtransActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldCaminhoRepoLocaWebtransActionPerformed
         // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldCaminhoRepoLocaWebtransActionPerformed
+
+    private void jButtonAlterTagActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAlterTagActionPerformed
+        AlterarTag();
     }//GEN-LAST:event_jButtonAlterTagActionPerformed
 
     private void jButtonAlterVersaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAlterVersaoActionPerformed
@@ -364,17 +388,19 @@ public final class telaTopComponent extends TopComponent {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanelCaminhoRepoLocal;
     private javax.swing.JPanel jPanelCaminhoRepoRemoto;
-    private javax.swing.JPanel jPanelTag;
+    private javax.swing.JPanel jPanelTag1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JTextField jTextFieldCaminhoRepoLocaGwLib;
     private javax.swing.JTextField jTextFieldCaminhoRepoLocaGweb;
@@ -382,7 +408,8 @@ public final class telaTopComponent extends TopComponent {
     private javax.swing.JTextField jTextFieldCaminhoRepoRemotoGweb;
     private javax.swing.JTextField jTextFieldCaminhoRepoRemotoWebtrans;
     private javax.swing.JTextField jTextFieldTag;
-    private javax.swing.JTextPane jTextPaneLog;
+    private javax.swing.JTextPane jTextPaneLogTag;
+    private javax.swing.JTextPane jTextPaneLogVersao;
     private javax.swing.JPanel painelAlterVersao;
     // End of variables declaration//GEN-END:variables
     @Override
@@ -408,60 +435,73 @@ public final class telaTopComponent extends TopComponent {
     }
     
     private void AlterarVersao() {
-        String caminhoLocal = "", caminhoRemoto = "", branch = "";
+        try {
+            String caminhoLocal = "", caminhoRemoto = "", branch = "", comando = "",
+                    caminhoLocalLib = "", caminhoRemotoLib = "";
+            //branch
+            switch (jComboBoxVersao.getSelectedIndex()) {
+                case 0:
+                    branch = "master";
+                    break;
+                case 1:
+                    branch = "atual";
+                    break;
+                case 2:
+                    branch = "custom";
+                    break;
+            }
 
-        //branch
-        switch (jComboBoxVersao.getSelectedIndex()) {
-            case 0:
-                branch = "master";
-                break;
-            case 1:
-                branch = "atual";
-                break;
-            case 2:
-                branch = "custom";
-                break;
+            switch (jComboBoxAlterVersao.getSelectedIndex()) {
+                case 0://webtrans
+                    caminhoLocal = jTextFieldCaminhoRepoLocaWebtrans.getText();
+                    caminhoRemoto = jTextFieldCaminhoRepoRemotoWebtrans.getText();
+                    break;
+                case 1://gweb
+                    caminhoLocal = jTextFieldCaminhoRepoLocaGweb.getText();
+                    caminhoRemoto = jTextFieldCaminhoRepoRemotoGweb.getText();
+                    break;
+            }
+            
+            caminhoLocalLib = jTextFieldCaminhoRepoLocaGwLib.getText();
+            caminhoRemotoLib = CaminhoRepoRemotoGwlib.getText();
+            
+            comando = comandoAtualizarVersao(caminhoLocal, caminhoRemoto, branch);
+            comando = comando + " && " + comandoAtualizarVersao(caminhoLocalLib, caminhoRemotoLib, branch);
+                    
+            executeCommand(comando, "versao");
+        } catch (Exception e) {
+            mensagem(e.getMessage());
         }
-
-        switch (jComboBoxAlterVersao.getSelectedIndex()) {
-            case 0://webtrans
-                caminhoLocal = jTextFieldCaminhoRepoLocaWebtrans.getText();
-                caminhoRemoto = jTextFieldCaminhoRepoRemotoWebtrans.getText();
-                break;
-            case 1://gweb
-                caminhoLocal = jTextFieldCaminhoRepoLocaGweb.getText();
-                caminhoRemoto = jTextFieldCaminhoRepoRemotoGweb.getText();
-                break;
-        }
-
-        String comando = comandoAtualizarVersao(caminhoLocal, caminhoRemoto, branch);
-                
-        jTextPaneLog.setText(comando);
-        
-        executeCommand(comando);
     }
-    
+
     private void AlterarTag() {
-        String caminhoLocal = "", caminhoRemoto = "", tag = "";
+        try {
+            String caminhoLocal = "", caminhoRemoto = "", tag = "", comando = "",
+                    caminhoLocalLib = "", caminhoRemotoLib = "";
 
-        tag = jTextFieldTag.getText();
+            tag = jTextFieldTag.getText();
 
-        switch (jComboBoxAlterTag.getSelectedIndex()) {
-            case 0://webtrans
-                caminhoLocal = jTextFieldCaminhoRepoLocaWebtrans.getText();
-                caminhoRemoto = jTextFieldCaminhoRepoRemotoWebtrans.getText();
-                break;
-            case 1://gweb
-                caminhoLocal = jTextFieldCaminhoRepoLocaGweb.getText();
-                caminhoRemoto = jTextFieldCaminhoRepoRemotoGweb.getText();
-                break;
+            switch (jComboBoxAlterTag.getSelectedIndex()) {
+                case 0://webtrans
+                    caminhoLocal = jTextFieldCaminhoRepoLocaWebtrans.getText();
+                    caminhoRemoto = jTextFieldCaminhoRepoRemotoWebtrans.getText();
+                    break;
+                case 1://gweb
+                    caminhoLocal = jTextFieldCaminhoRepoLocaGweb.getText();
+                    caminhoRemoto = jTextFieldCaminhoRepoRemotoGweb.getText();
+                    break;
+            }
+            
+            caminhoLocalLib = jTextFieldCaminhoRepoLocaGwLib.getText();
+            caminhoRemotoLib = CaminhoRepoRemotoGwlib.getText();
+            
+            comando = comandoAlterarTag(caminhoLocal, caminhoRemoto, tag);
+            comando = comando + " && " + comandoAlterarTag(caminhoLocalLib, caminhoRemotoLib, tag);
+                    
+            executeCommand(comando, "tag");
+        } catch (Exception e) {
+            mensagem(e.getMessage());
         }
-
-        String comando = comandoAlterarTag(caminhoLocal, caminhoRemoto, tag);
-                
-        jTextPaneLog.setText(comando); 
-        
-        executeCommand(comando);
     }
 
     private String comandoAtualizarVersao(String caminhoDir, String caminhoRemoto, String branch) {
@@ -476,7 +516,7 @@ public final class telaTopComponent extends TopComponent {
                 .concat("/")
                 .concat(branch);
     }
-    
+
     private String comandoAlterarTag(String caminhoDir, String caminhoRemoto, String tag ) {
         return "cd "
                 .concat(caminhoDir)
@@ -487,31 +527,36 @@ public final class telaTopComponent extends TopComponent {
                 .concat(" -b ")
                 .concat(tag);
     }
-    
-    public void executeCommand(final String command) {
 
-        final ArrayList<String> commands = new ArrayList<String>();
-        commands.add("/bin/bash");
-        commands.add("-c");
-        commands.add(command);
-
-        BufferedReader br = null;
-
+    public void executeCommand(final String command, String exibirLog) {
         try {
+            final ArrayList<String> commands = new ArrayList<String>();
+            commands.add("/bin/bash");
+            commands.add("-c");
+            commands.add(command);
+
+            BufferedReader br = null;
+
             final ProcessBuilder p = new ProcessBuilder(commands);
             final Process process = p.start();
             final InputStream is = process.getInputStream();
             final InputStreamReader isr = new InputStreamReader(is);
             br = new BufferedReader(isr);
 
-            String line;
-            while((line = br.readLine()) != null) {
-                System.out.println("Retorno do comando = [" + line + "]");
+            String line, log = "";
+            while ((line = br.readLine()) != null) {
+                log = log + line + "\n";
             }
-        } catch (Exception ioe) {
-
-        } finally {
-            secureClose(br);
+            
+            if (exibirLog == "versao") {
+                jTextPaneLogVersao.setText(log);
+            } else if (exibirLog == "tag") {
+                jTextPaneLogTag.setText(log);
+            }
+            
+            secureClose(isr);
+        } catch (Exception e) {
+            mensagem(e.getMessage());
         }
     }
 
@@ -520,9 +565,12 @@ public final class telaTopComponent extends TopComponent {
             if (resource != null) {
                 resource.close();
             }
-        } catch (IOException ex) {
-            
+        } catch (IOException e) {
+            mensagem(e.getMessage());
         }
     }
-}
 
+    private void mensagem(String mensagem) {
+        JOptionPane.showMessageDialog(null, mensagem);
+    }
+}
