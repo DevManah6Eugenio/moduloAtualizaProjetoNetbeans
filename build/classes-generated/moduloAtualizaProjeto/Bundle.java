@@ -1,6 +1,5 @@
 package moduloAtualizaProjeto;
 /** Localizable strings for {@link moduloAtualizaProjeto}. */
-@javax.annotation.Generated(value="org.netbeans.modules.openide.util.NbBundleProcessor")
 class Bundle {
     /**
      * @return <i>tela</i>
@@ -10,7 +9,7 @@ class Bundle {
         return org.openide.util.NbBundle.getMessage(Bundle.class, "CTL_telaAction");
     }
     /**
-     * @return <i>tela Window</i>
+     * @return <i>Atualizar Projetos GW</i>
      * @see telaTopComponent
      */
     static String CTL_telaTopComponent() {

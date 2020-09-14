@@ -1,59 +1,34 @@
 <?xml version="1.0"?>
-<!--
-DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
-
-Copyright (c) 2004, 2016 Oracle and/or its affiliates. All rights reserved.
-
-Oracle and Java are registered trademarks of Oracle and/or its affiliates.
-Other names may be trademarks of their respective owners.
-
-The contents of this file are subject to the terms of either the GNU
-General Public License Version 2 only ("GPL") or the Common
-Development and Distribution License("CDDL") (collectively, the
-"License"). You may not use this file except in compliance with the
-License. You can obtain a copy of the License at
-http://www.netbeans.org/cddl-gplv2.html
-or nbbuild/licenses/CDDL-GPL-2-CP. See the License for the
-specific language governing permissions and limitations under the
-License.  When distributing the software, include this License Header
-Notice in each file and include the License file at
-nbbuild/licenses/CDDL-GPL-2-CP.  Oracle designates this
-particular file as subject to the "Classpath" exception as provided
-by Oracle in the GPL Version 2 section of the License file that
-accompanied this code. If applicable, add the following below the
-License Header, with the fields enclosed by brackets [] replaced by
-your own identifying information:
-"Portions Copyrighted [year] [name of copyright owner]"
-
-If you wish your version of this file to be governed by only the CDDL
-or only the GPL Version 2, indicate your decision by adding
-"[Contributor] elects to include this software in this distribution
-under the [CDDL or GPL Version 2] license." If you do not indicate a
-single choice of license, a recipient has the option to distribute
-your version of this file under either the CDDL, the GPL Version 2 or
-to extend the choice of license to its licensees as provided above.
-However, if you add GPL Version 2 code and therefore, elected the GPL
-Version 2 license, then the option applies only if the new code is
-made subject to such option by the copyright holder.
-
-Contributor(s):
--->
 <!DOCTYPE settings PUBLIC "-//NetBeans//DTD Session settings 1.0//EN" "http://www.netbeans.org/dtds/sessionsettings-1_0.dtd">
 <settings version="1.0">
-	<module name="org.netbeans.modules.projectui" spec="1.0"/>
-	<instanceof class="java.awt.Component"/>
-	<instanceof class="java.awt.Container"/>
-	<instanceof class="java.awt.MenuContainer"/>
-	<instanceof class="java.awt.image.ImageObserver"/>
-	<instanceof class="java.io.Externalizable"/>
-	<instanceof class="java.io.Serializable"/>
-	<instanceof class="java.lang.Object"/>
-	<instanceof class="javax.accessibility.Accessible"/>
-	<instanceof class="javax.swing.JComponent"/>
-	<instanceof class="org.openide.util.HelpCtx$Provider"/>
-	<instanceof class="org.openide.util.Lookup$Provider"/>
+    <module name="org.netbeans.modules.projectui" spec="1.63.0.8.9"/>
+    <instanceof class="java.awt.Component"/>
+    <instanceof class="java.awt.Container"/>
+    <instanceof class="java.awt.MenuContainer"/>
+    <instanceof class="java.awt.image.ImageObserver"/>
+    <instanceof class="java.beans.PropertyChangeListener"/>
+    <instanceof class="java.io.Externalizable"/>
+    <instanceof class="java.io.Serializable"/>
+    <instanceof class="java.lang.Object"/>
+    <instanceof class="java.util.EventListener"/>
+    <instanceof class="javax.accessibility.Accessible"/>
+    <instanceof class="javax.swing.JComponent"/>
+    <instanceof class="javax.swing.TransferHandler$HasGetTransferHandler"/>
+    <instanceof class="org.netbeans.modules.project.ui.ProjectTab"/>
+    <instanceof class="org.openide.awt.UndoRedo$Provider"/>
+    <instanceof class="org.openide.explorer.ExplorerManager$Provider"/>
+    <instanceof class="org.openide.util.HelpCtx$Provider"/>
+    <instanceof class="org.openide.util.Lookup$Provider"/>
     <instanceof class="org.openide.windows.TopComponent"/>
-    <instanceof class="org.openide.explorer.ExplorerPanel"/>
-	<instanceof class="org.netbeans.modules.project.ui.ProjectTab"/>
-    <instance class="org.netbeans.modules.project.ui.ProjectTab" method="getLogical"/>
+    <serialdata class="org.netbeans.modules.project.ui.ProjectTab">
+        ACED0005737200296F72672E6F70656E6964652E77696E646F77732E546F70436F6D706F6E656E74245265706C6163657284
+        874494BDDF6D64030000787074002A6F72672E6E65746265616E732E6D6F64756C65732E70726F6A6563742E75692E50726F
+        6A6563745461627372000F6A6176612E6C616E672E53686F7274684D37133460DA5202000153000576616C7565787200106A
+        6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000177040000000174000850726F6A65637473707074
+        001470726F6A6563745461624C6F676963616C5F7463737200376F72672E6E65746265616E732E6D6F64756C65732E70726F
+        6A6563742E75692E50726F6A65637473526F6F744E6F64652448616E646C65000000123F79669A0200014900087669657754
+        797065787000000001737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65
+        787000000001770400000001757200135B4C6A6176612E6C616E672E537472696E673BADD256E7E91D7B4702000078700000
+        0000787371007E000A000000007704000000007878
+    </serialdata>
 </settings>

@@ -42,7 +42,7 @@ import moduloAtualizaProjeto.Bundle;
 )
 @Messages({
     "CTL_telaAction=tela",
-    "CTL_telaTopComponent=tela Window",
+    "CTL_telaTopComponent=Atualizar Projetos GW",
     "HINT_telaTopComponent=This is a tela window"
 })
 public final class telaTopComponent extends TopComponent {
