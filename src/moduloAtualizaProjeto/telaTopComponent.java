@@ -95,6 +95,15 @@ public final class telaTopComponent extends TopComponent {
         jTextFieldCaminhoRepoRemotoGweb = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         CaminhoRepoRemotoGwlib = new javax.swing.JTextField();
+        jPanel4 = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jTextFieldEmailSSH = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        jTextFieldSenhaSSH = new javax.swing.JTextField();
+        jButtonGerarChave = new javax.swing.JButton();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTextAreaLogSSH = new javax.swing.JTextArea();
 
         painelAlterVersao.setBorder(javax.swing.BorderFactory.createTitledBorder(org.openide.util.NbBundle.getMessage(telaTopComponent.class, "telaTopComponent.painelAlterVersao.border.title"))); // NOI18N
 
@@ -122,8 +131,8 @@ public final class telaTopComponent extends TopComponent {
                 .addGap(18, 18, 18)
                 .addComponent(jComboBoxVersao, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButtonAlterVersao, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jButtonAlterVersao, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(60, Short.MAX_VALUE))
         );
         painelAlterVersaoLayout.setVerticalGroup(
             painelAlterVersaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -186,8 +195,8 @@ public final class telaTopComponent extends TopComponent {
                 .addGap(18, 18, 18)
                 .addComponent(jTextFieldTag, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButtonAlterTag, javax.swing.GroupLayout.DEFAULT_SIZE, 153, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jButtonAlterTag, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(61, Short.MAX_VALUE))
         );
         jPanelTag1Layout.setVerticalGroup(
             jPanelTag1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -272,7 +281,7 @@ public final class telaTopComponent extends TopComponent {
                 .addGroup(jPanelCaminhoRepoLocalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(jTextFieldCaminhoRepoLocaGwLib, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanelCaminhoRepoRemoto.setBorder(javax.swing.BorderFactory.createTitledBorder(org.openide.util.NbBundle.getMessage(telaTopComponent.class, "telaTopComponent.jPanelCaminhoRepoRemoto.border.title"))); // NOI18N
@@ -324,7 +333,7 @@ public final class telaTopComponent extends TopComponent {
                 .addGroup(jPanelCaminhoRepoRemotoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
                     .addComponent(CaminhoRepoRemotoGwlib, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -348,6 +357,83 @@ public final class telaTopComponent extends TopComponent {
         );
 
         jTabbedPane2.addTab(org.openide.util.NbBundle.getMessage(telaTopComponent.class, "telaTopComponent.jPanel3.TabConstraints.tabTitle"), jPanel3); // NOI18N
+
+        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(org.openide.util.NbBundle.getMessage(telaTopComponent.class, "telaTopComponent.jPanel5.border.title"))); // NOI18N
+
+        org.openide.awt.Mnemonics.setLocalizedText(jLabel4, org.openide.util.NbBundle.getMessage(telaTopComponent.class, "telaTopComponent.jLabel4.text")); // NOI18N
+
+        jTextFieldEmailSSH.setText(org.openide.util.NbBundle.getMessage(telaTopComponent.class, "telaTopComponent.jTextFieldEmailSSH.text")); // NOI18N
+
+        org.openide.awt.Mnemonics.setLocalizedText(jLabel10, org.openide.util.NbBundle.getMessage(telaTopComponent.class, "telaTopComponent.jLabel10.text")); // NOI18N
+
+        jTextFieldSenhaSSH.setText(org.openide.util.NbBundle.getMessage(telaTopComponent.class, "telaTopComponent.jTextFieldSenhaSSH.text")); // NOI18N
+
+        org.openide.awt.Mnemonics.setLocalizedText(jButtonGerarChave, org.openide.util.NbBundle.getMessage(telaTopComponent.class, "telaTopComponent.jButtonGerarChave.text")); // NOI18N
+        jButtonGerarChave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonGerarChaveActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jTextFieldEmailSSH, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextFieldSenhaSSH, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButtonGerarChave)))
+                .addContainerGap(44, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(jTextFieldEmailSSH, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(jTextFieldSenhaSSH, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonGerarChave)))
+        );
+
+        jTextAreaLogSSH.setColumns(20);
+        jTextAreaLogSSH.setRows(5);
+        jScrollPane3.setViewportView(jTextAreaLogSSH);
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jScrollPane3))
+                .addContainerGap())
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        jTabbedPane2.addTab(org.openide.util.NbBundle.getMessage(telaTopComponent.class, "telaTopComponent.jPanel4.TabConstraints.tabTitle"), jPanel4); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -377,17 +463,24 @@ public final class telaTopComponent extends TopComponent {
         AlterarVersao();
     }//GEN-LAST:event_jButtonAlterVersaoActionPerformed
 
+    private void jButtonGerarChaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGerarChaveActionPerformed
+        gerarChaveSSH();
+    }//GEN-LAST:event_jButtonGerarChaveActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField CaminhoRepoRemotoGwlib;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButtonAlterTag;
     private javax.swing.JButton jButtonAlterVersao;
+    private javax.swing.JButton jButtonGerarChave;
     private javax.swing.JComboBox<String> jComboBoxAlterTag;
     private javax.swing.JComboBox<String> jComboBoxAlterVersao;
     private javax.swing.JComboBox<String> jComboBoxVersao;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -396,17 +489,23 @@ public final class telaTopComponent extends TopComponent {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanelCaminhoRepoLocal;
     private javax.swing.JPanel jPanelCaminhoRepoRemoto;
     private javax.swing.JPanel jPanelTag1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTabbedPane jTabbedPane2;
+    private javax.swing.JTextArea jTextAreaLogSSH;
     private javax.swing.JTextField jTextFieldCaminhoRepoLocaGwLib;
     private javax.swing.JTextField jTextFieldCaminhoRepoLocaGweb;
     private javax.swing.JTextField jTextFieldCaminhoRepoLocaWebtrans;
     private javax.swing.JTextField jTextFieldCaminhoRepoRemotoGweb;
     private javax.swing.JTextField jTextFieldCaminhoRepoRemotoWebtrans;
+    private javax.swing.JTextField jTextFieldEmailSSH;
+    private javax.swing.JTextField jTextFieldSenhaSSH;
     private javax.swing.JTextField jTextFieldTag;
     private javax.swing.JTextPane jTextPaneLogTag;
     private javax.swing.JTextPane jTextPaneLogVersao;
@@ -503,6 +602,18 @@ public final class telaTopComponent extends TopComponent {
             mensagem(e.getMessage());
         }
     }
+    
+    private void gerarChaveSSH() {
+        try {
+            String comando = "", email = "", senha = "";
+            email = jTextFieldEmailSSH.getText();
+            senha = jTextFieldSenhaSSH.getText();            
+            comando = comandoGerarChaveSSH(senha, email);
+            executeCommand(comando, "chave");
+        } catch (Exception ex) {
+            mensagem(ex.getMessage());
+        }
+    }
 
     private String comandoAtualizarVersao(String caminhoDir, String caminhoRemoto, String branch) {
         return "cd "
@@ -526,6 +637,15 @@ public final class telaTopComponent extends TopComponent {
                 .concat(tag)
                 .concat(" -b ")
                 .concat(tag);
+    }
+    
+    private String comandoGerarChaveSSH(String senha, String email) {
+        return "ssh-keygen -t rsa -b 4096 -C \"".concat(email).concat("\" -N ")
+                .concat(senha)
+                .concat(" -f $HOME/.ssh/id_rsa ")
+                .concat(" && cd $HOME/.ssh/ ")
+                .concat(" && pwd ")
+                .concat(" && cat id_rsa.pub");
     }
 
     public void executeCommand(final String command, String exibirLog) {
@@ -552,6 +672,8 @@ public final class telaTopComponent extends TopComponent {
                 jTextPaneLogVersao.setText(log);
             } else if (exibirLog == "tag") {
                 jTextPaneLogTag.setText(log);
+            } else if (exibirLog == "chave") {
+                jTextAreaLogSSH.setText(log);
             }
             
             secureClose(isr);
