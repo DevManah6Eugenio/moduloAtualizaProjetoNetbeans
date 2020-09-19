@@ -16,7 +16,7 @@ class Bundle {
         return org.openide.util.NbBundle.getMessage(Bundle.class, "CTL_telaTopComponent");
     }
     /**
-     * @return <i>This is a tela window</i>
+     * @return <i>Atualizar Projetos GW</i>
      * @see telaTopComponent
      */
     static String HINT_telaTopComponent() {

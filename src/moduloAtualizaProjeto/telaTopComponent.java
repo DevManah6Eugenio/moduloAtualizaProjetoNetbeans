@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package moduloAtualizaProjeto;
 
 import java.io.BufferedReader;
@@ -11,22 +6,16 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import javax.swing.JOptionPane;
 import org.netbeans.api.settings.ConvertAsProperties;
 import org.openide.awt.ActionID;
 import org.openide.awt.ActionReference;
 import org.openide.windows.TopComponent;
 import org.openide.util.NbBundle.Messages;
-import moduloAtualizaProjeto.Bundle;
 
-/**
- * Top component which displays something.
- */
 @ConvertAsProperties(
         dtd = "-//teste_modulo//tela//EN",
-        autostore = false
+        autostore = true
 )
 @TopComponent.Description(
         preferredID = "telaTopComponent",
@@ -43,7 +32,7 @@ import moduloAtualizaProjeto.Bundle;
 @Messages({
     "CTL_telaAction=tela",
     "CTL_telaTopComponent=Atualizar Projetos GW",
-    "HINT_telaTopComponent=This is a tela window"
+    "HINT_telaTopComponent=Atualizar Projetos GW"
 })
 public final class telaTopComponent extends TopComponent {
 
@@ -100,8 +89,8 @@ public final class telaTopComponent extends TopComponent {
         jLabel4 = new javax.swing.JLabel();
         jTextFieldEmailSSH = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-        jTextFieldSenhaSSH = new javax.swing.JTextField();
         jButtonGerarChave = new javax.swing.JButton();
+        jTextFieldSenhaSSH = new javax.swing.JPasswordField();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextAreaLogSSH = new javax.swing.JTextArea();
 
@@ -366,14 +355,14 @@ public final class telaTopComponent extends TopComponent {
 
         org.openide.awt.Mnemonics.setLocalizedText(jLabel10, org.openide.util.NbBundle.getMessage(telaTopComponent.class, "telaTopComponent.jLabel10.text")); // NOI18N
 
-        jTextFieldSenhaSSH.setText(org.openide.util.NbBundle.getMessage(telaTopComponent.class, "telaTopComponent.jTextFieldSenhaSSH.text")); // NOI18N
-
         org.openide.awt.Mnemonics.setLocalizedText(jButtonGerarChave, org.openide.util.NbBundle.getMessage(telaTopComponent.class, "telaTopComponent.jButtonGerarChave.text")); // NOI18N
         jButtonGerarChave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonGerarChaveActionPerformed(evt);
             }
         });
+
+        jTextFieldSenhaSSH.setText(org.openide.util.NbBundle.getMessage(telaTopComponent.class, "telaTopComponent.jTextFieldSenhaSSH.text")); // NOI18N
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -387,10 +376,10 @@ public final class telaTopComponent extends TopComponent {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel10)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextFieldSenhaSSH, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextFieldSenhaSSH, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(13, 13, 13)
                 .addComponent(jButtonGerarChave)
-                .addGap(0, 138, Short.MAX_VALUE))
+                .addGap(0, 79, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -398,8 +387,8 @@ public final class telaTopComponent extends TopComponent {
                 .addComponent(jLabel4)
                 .addComponent(jTextFieldEmailSSH, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addComponent(jLabel10)
-                .addComponent(jTextFieldSenhaSSH, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(jButtonGerarChave))
+                .addComponent(jButtonGerarChave)
+                .addComponent(jTextFieldSenhaSSH, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jTextAreaLogSSH.setColumns(20);
@@ -423,7 +412,7 @@ public final class telaTopComponent extends TopComponent {
                 .addContainerGap()
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -443,6 +432,10 @@ public final class telaTopComponent extends TopComponent {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButtonGerarChaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGerarChaveActionPerformed
+        gerarChaveSSH();
+    }//GEN-LAST:event_jButtonGerarChaveActionPerformed
+
     private void jTextFieldCaminhoRepoRemotoWebtransActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldCaminhoRepoRemotoWebtransActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldCaminhoRepoRemotoWebtransActionPerformed
@@ -458,10 +451,6 @@ public final class telaTopComponent extends TopComponent {
     private void jButtonAlterVersaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAlterVersaoActionPerformed
         AlterarVersao();
     }//GEN-LAST:event_jButtonAlterVersaoActionPerformed
-
-    private void jButtonGerarChaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGerarChaveActionPerformed
-        gerarChaveSSH();
-    }//GEN-LAST:event_jButtonGerarChaveActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField CaminhoRepoRemotoGwlib;
@@ -501,7 +490,7 @@ public final class telaTopComponent extends TopComponent {
     private javax.swing.JTextField jTextFieldCaminhoRepoRemotoGweb;
     private javax.swing.JTextField jTextFieldCaminhoRepoRemotoWebtrans;
     private javax.swing.JTextField jTextFieldEmailSSH;
-    private javax.swing.JTextField jTextFieldSenhaSSH;
+    private javax.swing.JPasswordField jTextFieldSenhaSSH;
     private javax.swing.JTextField jTextFieldTag;
     private javax.swing.JTextPane jTextPaneLogTag;
     private javax.swing.JTextPane jTextPaneLogVersao;
@@ -518,17 +507,29 @@ public final class telaTopComponent extends TopComponent {
     }
 
     void writeProperties(java.util.Properties p) {
-        // better to version settings since initial version as advocated at
-        // http://wiki.apidesign.org/wiki/PropertyFiles
         p.setProperty("version", "1.0");
-        // TODO store your settings
+        p.setProperty("localWebtransLocal", jTextFieldCaminhoRepoLocaWebtrans.getText());
+        p.setProperty("localGwebLocal", jTextFieldCaminhoRepoLocaGweb.getText());
+        p.setProperty("localGwLibLocal", jTextFieldCaminhoRepoLocaGwLib.getText());
+
+        p.setProperty("localWebtransRemoto", jTextFieldCaminhoRepoRemotoWebtrans.getText());
+        p.setProperty("localGwebRemoto", jTextFieldCaminhoRepoRemotoGweb.getText());
+        p.setProperty("localGwLibRemoto", CaminhoRepoRemotoGwlib.getText());
     }
 
     void readProperties(java.util.Properties p) {
         String version = p.getProperty("version");
-        // TODO read your settings according to their version
+        
+        jTextFieldCaminhoRepoLocaWebtrans.setText(p.getProperty("localWebtransLocal"));
+        jTextFieldCaminhoRepoLocaGweb.setText(p.getProperty("localGwebLocal"));
+        jTextFieldCaminhoRepoLocaGwLib.setText(p.getProperty("localGwLibLocal"));
+
+        jTextFieldCaminhoRepoRemotoWebtrans.setText(p.getProperty("localWebtransRemoto"));
+        jTextFieldCaminhoRepoRemotoGweb.setText(p.getProperty("localGwebRemoto"));
+        CaminhoRepoRemotoGwlib.setText(p.getProperty("localGwLibRemoto"));
+        
     }
-    
+   
     private void AlterarVersao() {
         try {
             String caminhoLocal = "", caminhoRemoto = "", branch = "", comando = "",
@@ -605,6 +606,7 @@ public final class telaTopComponent extends TopComponent {
             email = jTextFieldEmailSSH.getText();
             senha = jTextFieldSenhaSSH.getText();            
             comando = comandoGerarChaveSSH(senha, email);
+            executeCommand(removerChaveSSH(), "");
             executeCommand(comando, "chave");
         } catch (Exception ex) {
             mensagem(ex.getMessage());
@@ -641,7 +643,12 @@ public final class telaTopComponent extends TopComponent {
                 .concat(" -f $HOME/.ssh/id_rsa ")
                 .concat(" && cd $HOME/.ssh/ ")
                 .concat(" && pwd ")
+                .concat(" && echo '\n\n -------------------- Chave Publica --------------------\n\n' ")
                 .concat(" && cat id_rsa.pub");
+    }
+    
+    private String removerChaveSSH() {
+        return "rm  $HOME/.ssh/id_rsa && rm $HOME/.ssh/id_rsa.pub ";
     }
 
     public void executeCommand(final String command, String exibirLog) {
@@ -664,12 +671,16 @@ public final class telaTopComponent extends TopComponent {
                 log = log + line + "\n";
             }
             
-            if (exibirLog == "versao") {
-                jTextPaneLogVersao.setText(log);
-            } else if (exibirLog == "tag") {
-                jTextPaneLogTag.setText(log);
-            } else if (exibirLog == "chave") {
-                jTextAreaLogSSH.setText(log);
+            switch (exibirLog) {
+                case "versao":
+                    jTextPaneLogVersao.setText(log);
+                    break;
+                case "tag":
+                    jTextPaneLogTag.setText(log);
+                    break;
+                case "chave":
+                    jTextAreaLogSSH.setText(log);
+                    break;
             }
             
             secureClose(isr);
